@@ -1,0 +1,21 @@
+@media(max-width:767px){
+    .close-btn-container{
+        display: flex;
+    }
+}
+
+@media(min-width:768px){
+    .close-btn-container{
+        display: none;
+    }
+}
+
+.border-bg {
+    border: 8px solid transparent;
+    border-image: linear-gradient(45deg, #004d31, #efdd05);
+    border-image-slice: 1;
+}
+
+h5{
+    font-size: clamp(1.1rem,2vw,1.45rem);
+}

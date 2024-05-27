@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 4px 5px;
+  font-size: clamp(0.8rem,2vw,0.92rem);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--bs-body-color);
+  appearance: none;
+  background-color: var(--bs-body-bg);
+  background-clip: padding-box;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: transparent;
+  border-color: #ced4da;
+}
+
+.form-control::placeholder{
+  opacity: 0.6;
+  font-size: clamp(0.8rem,2vw,0.92rem);
+}
+

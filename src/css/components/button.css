@@ -1,0 +1,8 @@
+.grad1{
+    background-image: linear-gradient(to right, #004d31, #efdd05);
+    color: white;
+}
+
+.btn-txt{
+    font-size: clamp(0.9rem,2vw,1rem);
+}

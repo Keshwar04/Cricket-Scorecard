@@ -1,0 +1,10 @@
+.either{
+    font-size: clamp(0.7rem,2vw,0.84rem);
+  }
+  .form-txt{
+    font-size: clamp(0.8rem,2vw,0.93rem);
+  } 
+
+  .u-line{
+    border-bottom: 1px solid #c9c4c4
+  }

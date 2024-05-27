@@ -1,0 +1,14 @@
+@media(max-width:576px){
+    .modal-width{
+        width: 88%; 
+        margin: 0 auto;
+
+    }
+}
+
+@media(min-width:577px) and (max-width:767px){
+    .modal-width{
+        width: 75%; 
+        margin: 0 auto;
+    }
+}

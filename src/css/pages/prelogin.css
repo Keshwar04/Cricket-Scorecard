@@ -1,0 +1,35 @@
+@media(min-width:768px){
+    .outer{
+        width: 87%;
+    }
+}
+
+@media(min-width:992px){
+    .outer{
+        width: 77%;
+    }
+}
+
+.prelogin-container {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+    height: 100%;
+}
+
+.image-container {
+    height: 100%;
+    padding: 0;
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
