@@ -8,19 +8,15 @@ const AuthModule = () => {
 
     const { active, setActive } = usePreLoginStore()
 
-    const loginProps = {
-        title: 'LOGIN',
+    const createProps = (type:string) => ({
+        title: type.toUpperCase(),
         width: 'w-50',
-        activeTitle: active === 'login',
-        handleClick: () => setActive('login')
-    }
-
-    const signupProps = {
-        title: 'SIGNUP',
-        width: 'w-50',
-        activeTitle: active === 'signup',
-        handleClick: () => setActive('signup')
-    }
+        activeTitle: active === type,
+        handleClick: () => setActive(type)
+    });
+    
+    const loginProps = createProps('login');
+    const signupProps = createProps('signup');
 
     return (
         <div className="border-bg py-2 modal-body p-0 d-flex justify-content-center align-items-center">

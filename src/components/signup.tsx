@@ -1,6 +1,6 @@
 import React from 'react'
 import InputControl from './inputControl'
-import LoginOrRegister from './loginOrRegister'
+import LoginOrRegister from './loginOrSignup'
 
 const SignUp = () => {
   return (

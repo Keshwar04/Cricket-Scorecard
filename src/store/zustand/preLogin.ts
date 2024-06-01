@@ -1,28 +1,19 @@
 import { create } from 'zustand';
+import { passwordIcon, stateCredentialOrError } from '../../type/prelogin';
 
 
-export const usePreLoginStore = create((set: any) => ({
+export const usePreLoginStore = create((set:any) => ({
   
     active: 'login',
-    setActive: (form: any) => {
-        set(() => ({ active: form }))
-    },
+    setActive: (form: string) => set(() => ({ active: form })),
 
     isboolean: {pwdIconShow:false, pwdInfoShow:false},
-    setIsBoolean: (updatedValue:any) => {
-        set(() => ({ isboolean: updatedValue }))
-    },
+    setIsBoolean: (updatedValue:passwordIcon) => set(() => ({ isboolean: updatedValue })),
 
-    errors: { login: { name: '', mail: '', pwd: '' }, signup: { name: '', mail: '', pwd: '' } },
-    setErrors: (errData: any) => {
-        set(() => ({errors: errData }))
-    },
+    errors: {} as stateCredentialOrError,
+    setErrors: (errData: stateCredentialOrError) => set(() => ({errors: errData })),
 
-    userCredntial: { login: { name: '', mail: '', pwd: '' }, signup: { name: '', mail: '', pwd: '' } },
-    setUserCredential: (credentialData: any) => {
-        set(() => ({ userCredntial: credentialData }))
-    }
-
-
-
+    userCredntial: {} as any,
+    setUserCredential: (credentialData: any) => set(() => ({ userCredntial: credentialData }))
+    
 }))

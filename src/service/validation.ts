@@ -1,8 +1,10 @@
-export const validator = (userCredntial:any,fieldState:string) =>{
+import { credentialOrErrorType} from "../type/prelogin";
+
+export const validator = (userCredntial:credentialOrErrorType,fieldState:string) =>{
 
     const regexMail = /^([A-Za-z0-9$])+\@([a-z])+\.([a-z])+$/;
     const regexPwd = /^((?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$]).{4,})+$/;
-    const error: any = {}
+    const error = {} as credentialOrErrorType
    
     if(!userCredntial.name){
         error.name = 'Enter Username'

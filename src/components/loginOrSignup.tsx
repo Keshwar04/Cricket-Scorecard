@@ -1,6 +1,6 @@
 import {usePreLoginStore} from '../store/zustand/preLogin'
 import '../css/components/loginOrRegister.css'
-const LoginOrRegister = ({isSignup}:any) => {
+const LoginOrRegister = ({isSignup}:{isSignup?:boolean}) => {
 
     const {setActive} = usePreLoginStore()
   return (

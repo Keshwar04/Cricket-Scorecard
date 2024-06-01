@@ -1,3 +1,13 @@
 .google{
     font-size: clamp(0.9rem,2vw,1rem);
 }
+
+.img-container{
+    width: 7%
+}
+
+@media(min-width:1200px){
+    .img-container{
+        width: 5.3%
+    }
+}

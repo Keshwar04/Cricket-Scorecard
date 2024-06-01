@@ -1,6 +1,7 @@
 import '../css/components/button.css'
+import { buttonType } from '../type/prelogin'
 
-const Button = ({ title, activeTitle, handleClick, width }: any) => {
+const Button = ({ title, activeTitle, handleClick, width }: buttonType) => {
     return (
         <>
             <div style={{ width: title === 'OK' && width }} className={`${width} d-flex border rounded`}>
