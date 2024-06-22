@@ -14,9 +14,3 @@
         width: 77%;
     }
 }
-
-@media(max-width: 768px) {
-    .abd-img{
-       /* height: 93vh; */
-    }
-}

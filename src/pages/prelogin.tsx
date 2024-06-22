@@ -7,14 +7,13 @@ import '../css/pages/prelogin.css'
 
 const PreLogin = () => {
     return (
-        <div>
-            <div className='container-fluid'>
-                <div className='row'>
-                    <div className='col-12 col-md-7 p-0 vh-100'>
+            <div className='container-fluid h-100'>
+                <div className='row h-100'>
+                    <div className='col-12 col-md-7 p-0 h-100'>
                         <img src={AbdBg} className='abd-img' alt='err' />
                     </div>
-                    <div className='d-none d-md-block col-md-5 p-0 vh-100'>
-                        <div className='outer mx-auto d-flex justify-content-center align-items-center vh-100'>
+                    <div className='d-none d-md-block col-md-5 p-0 h-100'>
+                        <div className='outer mx-auto d-flex justify-content-center align-items-center h-100'>
                             <AuthModule />
                         </div>
                     </div>
@@ -28,7 +27,6 @@ const PreLogin = () => {
                     <LoginPopup />
                 </div>
             </div>
-        </div>
     )
 }
 
