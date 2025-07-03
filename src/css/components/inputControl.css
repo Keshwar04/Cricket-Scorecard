@@ -3,11 +3,11 @@
   height: 17px;
   overflow: hidden;
   color: red;
-  padding-left: 5px
+  padding-left: 5px;
 }
 
 .pwd-img-container {
-  width: 3.5%;
-  margin-top: 1%;
-  height: 100%
+  width: 12px;
+  height: 100%;
+  cursor: pointer;
 }
